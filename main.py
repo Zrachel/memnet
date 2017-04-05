@@ -21,7 +21,7 @@ pp = pprint.PrettyPrinter()
 pp.pprint(Flags.__flags)
 
 # define data
-data = GenData('../memn2n/data/tasks_1-20_v1-2/en', memory_size = Flags.memory_size, description_size = Flags.description_length, vocab_size = Flags.vocab_size, taskid = 8)
+data = GenData('data/tasks_1-20_v1-2/en', memory_size = Flags.memory_size, description_size = Flags.description_length, vocab_size = Flags.vocab_size, taskid = 8)
 Flags.vocab_size = len(data.vocab)
 
 # define model
